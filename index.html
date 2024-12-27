@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script src="./scripts/main.js" type="module" defer></script>
+</head>
+<body>
+  <div class="container">
+
+    <div class="display">
+      <div class="display__title">
+        <p>Password Generator</p>
+      </div>
+      <hr>
+      <div class="display__body">
+        <div class="input-box">
+          <input class="input-box__input" type="text" disabled>
+          <span class="input-box__copy-icon material-symbols-outlined">copy_all</span>
+        </div>
+        <div class="password-indicator"></div>
+
+        <div class="password-length">
+          <div class="password-length__detail">
+            <label>Password length:</label>
+            <span>10</span>
+          </div>
+          <input class="password-length__range" type="range" min="5" max="20" value="10" step="1">
+        </div>
+
+        <div class="password-settings">
+          <label class="password-settings__title">Settings</label>
+          <ul class="password-settings__options">
+            <li class="password-settings__item">
+              <input type="checkbox" id="lowercase" checked readonly disabled>
+              <label for="lowercase">lowercase (a-z)</label>
+            </li>
+            <li class="password-settings__item">
+              <input type="checkbox" id="uppercase" >
+              <label for="uppercase">uppercase (A-Z)</label>
+            </li>
+            <li class="password-settings__item">
+              <input type="checkbox" id="numbers" >
+              <label for="numbers">numbers (0-9)</label>
+            </li>
+            <li class="password-settings__item">
+              <input type="checkbox" id="symbols">
+              <label for="symbols">symbols (~!@#)</label>
+            </li>
+          </ul>
+        </div>
+
+        <button class="generate-password-button">Generate</button>
+
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>

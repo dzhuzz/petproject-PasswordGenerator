@@ -1,0 +1,10 @@
+@use 'normalize';
+@use 'fonts';
+@use 'globals';
+
+@use './blocks/display';
+@use './blocks/input-box';
+@use './blocks/password-indicator';
+@use './blocks/password-length';
+@use './blocks/password-settings';
+@use './blocks/generate-password-button';
